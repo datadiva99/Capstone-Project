@@ -1,0 +1,16 @@
+setnames(features, 1:2, c("Value", "Features"))
+
+session_1 <- read.delim("clipboard", header = FALSE)
+
+head(session_1)
+
+atlanta_1 <- atlanta[,1:6]
+
+colnames(atlanta_1) <- c("ID", "Restaurant", "Feat 1", "Feat 2", "Feat 3", "Feat 4")
+
+
+table_long[, value := 1]
+w <- reshape(atlanta_1, 
+             timevar = "Restaurant",
+             idvar = c("Feat 1", "Feat 2", "Feat 3", "Feat 4"),
+             direction = "wide")
