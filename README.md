@@ -21,6 +21,10 @@ Approach
 .
  
 Step 1: Transform restaurant data into binary matrix
+
 Step 2: Categorize feature dataset
+
 Step 3: Build User-based collaborative filtering system
+
+
 Step 4: Evaluate the model
